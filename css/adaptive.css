@@ -383,6 +383,10 @@
     #description-image img {
         max-width: 450px;
     }
+
+    #sign-up {
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width: 626px) {
@@ -413,6 +417,10 @@
 
     #follow-text, #discount-text {
         font-size: 23px;
+    }
+
+    #sign-up {
+        margin-top: 100px;
     }
 }
 
@@ -529,6 +537,10 @@
 @media screen and (max-width: 383px) {
     #follow-text, #discount-text {
         font-size: 20px;
+    }
+
+    #sign-up {
+        margin-top: 200px;
     }
 }
 
