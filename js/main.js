@@ -5,7 +5,6 @@ $(document).ready(() => {
     $('.menu-btn').click((e) => {
         $('.menu-btn').toggleClass('menu-btn-active');
         $('.menu-nav').toggleClass('menu-nav-active');
-
     });
 
     $('.menu-nav, .menu-nav a').click(() => {
@@ -68,7 +67,7 @@ $(document).ready(() => {
             $('#discount-pop-up').hide();
     });
 
-    $('#main-info-action .btn-gold, .btn-card').click(() => {
+    $('#main-info-action .btn-gold, .btn-card, .link').click(() => {
         $('#sign-up-container').css('display', 'flex');
     });
 

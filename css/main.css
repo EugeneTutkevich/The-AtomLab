@@ -125,6 +125,18 @@ body {
     color: rgb(255, 255, 255);
 }
 
+.link {
+    width: 80px;
+    margin: 0 0 20px 0;
+
+    font-family: "MullerRegular", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 1.2;
+    color: rgb(163, 136, 92);
+    cursor: pointer;
+}
+
 .menu-btn {
     top: 0;
     left: 2px;
