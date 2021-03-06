@@ -589,7 +589,6 @@ h3 {
     left: 0;
     background: rgba(0,0,0,0.86);
     z-index: 999;
-    overflow: scroll;
 }
 
 #sign-up {
@@ -758,6 +757,7 @@ input::-webkit-input-placeholder {
     margin: 0 auto;
     padding-bottom: 39px;
     border-right: 1px solid rgb(163, 136, 92);
+    overflow: hidden;
 }
 
 #team .block-title {
