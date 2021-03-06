@@ -1,0 +1,562 @@
+@media screen and (min-width: 1921px) {
+    body {
+        background-size: 100% 100%;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    #header, #advantages-container, #description, #list, #team, #contacts-container, #footer-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #description-text, #map {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    #main-info-title {
+        font-size: 35px;
+    }
+
+    #back-club {
+        font-size: 160px;
+    }
+
+    #main-info-subtitle {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    #description-text-words .description-text-item {
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+
+    #description-text-logo img {
+        left: 100px;
+    }
+
+    #description-features {
+        margin-top: 50px;
+    }
+
+    #list-container {
+        justify-content: space-around;
+    }
+
+    .list-container-column:first-child {
+        padding-left: 0;
+    }
+
+    #sign-up {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .slick-prev::before, .slick-next::before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1086px) {
+    #back-club {
+        font-size: 135px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    #description-image img:hover {
+        transform: scale(1.05);
+    }
+
+    #team-slider {
+        transform: translateX(18px);
+    }
+}
+
+@media screen and (max-width: 1016px) {
+    #back-club {
+        font-size: 100px;
+    }
+
+    #discount {
+        margin-top: 109px;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    #contacts-item {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #contacts-item {
+        padding-left: 0;
+    }
+
+    #sign-up #reserve {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    #main-info-title {
+        font-size: 32px;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .advantage span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 954px) {
+    #description-text {
+        order: 1;
+    }
+
+    #header, #advantages-container, #description, #list, #team, #contacts-container, #footer-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        overflow: hidden;
+    }
+
+    #description-text-words .description-text-item {
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    #description-text-logo img {
+        left: 219px;
+        bottom: 200px;
+    }
+
+    #list {
+        margin: 0 auto 100px auto;
+    }
+
+    #follow {
+        margin-top: 90px;
+    }
+
+    #back-scissors {
+        left: 178px;
+    }
+}
+
+@media screen and (max-width: 945px) {
+    #main-info-title {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 939px) {
+    #description-text-words .description-text-item {
+        margin-bottom: 25px;
+    }
+
+    #description-features {
+        margin-top: 75px;
+    }
+}
+
+@media screen and (max-width: 931px) {
+    #description .block-title {
+        margin: 40px auto 54px auto;
+    }
+
+    #description-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #description-text {
+        order: 1;
+        padding-left: 0;
+    }
+
+    #description-text-item {
+        font-size: 17px;
+    }
+
+    #description-text-words {
+        margin-bottom: 40px;
+    }
+
+    #description-image {
+        order: 2;
+    }
+
+    #description-text-logo {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 926px) {
+
+    #header, #main {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #main-info {
+        padding-left: 0;
+    }
+
+    #main-info-title {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    #phone {
+        display: none;
+    }
+
+    #navigation {
+        display: none;
+    }
+
+    .menu-block {
+        display: flex;
+    }
+
+    #main-image img {
+        width: 400px;
+    }
+
+    #back-strong {
+        font-size: 147px;
+        top: 52px;
+    }
+
+    #back-club {
+        font-size: 80px;
+        bottom: 70px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    #sign-up {
+        padding: 40px 50px 40px 50px;
+    }
+
+    #advantages-container {
+        max-width: 311px;
+        flex-direction: column;
+    }
+
+    .advantage {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    #list {
+        margin-bottom: 0;
+    }
+
+    #list-container, #back-scissors {
+        display: none;
+    }
+
+    .list-container-elem {
+        margin-top: 32px;
+    }
+
+    #accordion {
+        display: block;
+        padding: 0 40px;
+    }
+
+    #team {
+        padding-bottom: 74px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #header {
+        padding-top: 30px;
+    }
+
+    #follow-text {
+        font-size: 26px;
+    }
+
+    #discount-text {
+        max-width: 395px;
+        font-size: 26px;
+    }
+
+    .contacts-item-text {
+        margin-top: 35px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #main {
+        margin-top: 0;
+    }
+
+    #back-strong {
+        font-size: 120px;
+    }
+
+    #back-club {
+        font-size: 70px;
+        bottom: 28px;
+    }
+
+    #main-info {
+        padding-right: 10px;
+    }
+
+    #main-image img {
+        width: 300px;
+    }
+
+    #advantages {
+        padding: 30px 0;
+    }
+
+    #follow-container #follow-action a.btn-gold,
+    #discount-action button.btn-gold {
+        padding: 22px 26px;
+        border-radius: 10px;
+    }
+    #discount-container, #follow-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #follow-text {
+        padding-right: 31px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .logo {
+        font-size: 22px;
+    }
+
+    #contacts #contacts-container #contacts-item .logo {
+        margin-bottom: 0;
+    }
+
+}
+@media screen and (max-width: 636px) {
+    #back-strong {
+        font-size: 114px;
+    }
+
+    #back-club {
+        font-size: 57px;
+        bottom: 20px;
+    }
+
+    #description-image {
+        text-align: center;
+    }
+
+    #description-features {
+        text-align: left;
+    }
+
+    #description-features .description-features-item {
+        font-size: 16px;
+    }
+
+    #description-image img {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 626px) {
+    #back-strong, #back-club {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 618px) {
+    #main-info-title {
+        font-size: 27px;
+        margin-top: 0;
+    }
+
+    #main-info-subtitle {
+        font-size: 15px;
+    }
+
+    #description .block-title {
+        font-size: 27px;
+    }
+
+    #sign-up .reserve-input {
+        margin-top: 16px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    #follow-text, #discount-text {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #main-image img {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #main {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #main-info {
+        padding: 0;
+    }
+
+    #main-info-title {
+        color: rgb(163, 136, 92);
+        text-align: center;
+    }
+
+    #main-info-subtitle {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #main-info-action {
+        display: none;
+    }
+
+    #discount {
+        padding: 23px 0;
+    }
+
+    #discount-container {
+        display: block;
+        text-align: center;
+    }
+
+    #discount-text {
+
+        text-align: center;
+        margin: 0 auto 15px auto;
+    }
+
+    .ui-accordion .ui-accordion-content {
+        padding: 0 15px 15px 15px;
+    }
+
+    #map {
+        display: none;
+    }
+
+    #contacts-item {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .list-container-elem {
+        flex-direction: column;
+    }
+
+    .elem-title {
+        margin-bottom: 10px;
+    }
+
+    #list .block-title {
+        margin: 40px auto 35px auto;
+    }
+}
+
+@media screen and (max-width: 454px) {
+    #description-image img {
+        max-width: 300px;
+    }
+
+    #frame-content .block-title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #header, #main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #accordion {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .ui-accordion .ui-accordion-header {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #sign-up .reserve-input .select::after {
+        top: 20px;
+    }
+
+    #list .block-title {
+        font-size: 27px;
+    }
+
+}
+
+@media screen and (max-width: 383px) {
+    #follow-text, #discount-text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 354px) {
+    .ui-accordion .ui-accordion-header {
+        font-size: 20px;
+        padding: 15px 5px 15px 10px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #header, #main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #main-info-title {
+        font-size: 25px;
+    }
+
+    .advantage img {
+        width: 36px;
+    }
+
+    .advantage span {
+        font-size: 15px;
+    }
+}
+
+
+

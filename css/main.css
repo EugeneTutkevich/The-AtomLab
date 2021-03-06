@@ -1,0 +1,959 @@
+@font-face {
+    font-family: "MullerRegular";
+    src: url("../fonts/MullerRegular.ttf");
+}
+
+@font-face {
+    font-family: "MullerBold";
+    src: url("../fonts/MullerBold.ttf");
+}
+
+@font-face {
+    font-family: "LoraRegular";
+    src: url("../fonts/LoraRegular.ttf");
+}
+
+@font-face {
+    font-family: "CastellarRegular";
+    src: url("../fonts/CastellarRegular.ttf");
+}
+
+body {
+    margin: 0;
+    background: url("../img/metal-carapiny-staryy.png");
+    position: relative;
+}
+
+.cover {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+/*------------HEADER------------*/
+
+#header {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    font-family: "LoraRegular", sans-serif;
+    font-size: 25px;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#navigation {
+    left: 30%;
+    font-family: "MullerRegular", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#navigation a {
+    margin-right: 50px;
+    padding-bottom: 7px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid transparent;
+    transition: all 0.4s ease-out;
+}
+
+#navigation a:hover {
+    border-bottom: 1px solid rgb(163, 136, 92);
+}
+
+#phone {
+    top: 80px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+
+    font-family: "MullerRegular", sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+#phone img {
+    margin-right: 15px;
+}
+
+/*------------MENU------------*/
+
+.menu-nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: 40px 10px 20px 40px;
+    background: rgba(0,0,0,0.9);
+    z-index: 4;
+}
+
+.menu-nav-active {
+    display: block;
+}
+
+.menu-nav a {
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    margin: 0 0 20px 0;
+    font-family: "MullerRegular", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+}
+
+.menu-btn {
+    top: 0;
+    left: 2px;
+    display: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: relative;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -1px;
+    width: 20px;
+    height: 2px;
+    background-color: #222;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+    content: '';
+    transition: all 0.4s ease-out;
+}
+
+.menu-btn span::before {
+    transform: translateY(-5px);
+}
+
+.menu-btn span::after {
+    transform: translateY(5px);
+}
+
+.menu-btn-active span::before {
+    transform: rotate(45deg);
+}
+
+.menu-btn-active span {
+    height: 0;
+}
+.menu-btn-active span::after {
+    transform: rotate(-45deg);
+}
+
+
+/*------------MAIN------------*/
+
+#main {
+    max-width: 1170px;
+    margin: 10px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+#back-strong {
+    font-size: 180px;
+    font-family: "CastellarRegular", sans-serif;
+    color: rgba(163, 136, 92, 0.2);
+    line-height: 0.111;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 1;
+}
+
+#back-club {
+    font-size: 180px;
+    font-family: "CastellarRegular", sans-serif;
+    color: rgba(163, 136, 92, 0.2);
+    line-height: 0.111;
+    position: absolute;
+    bottom: 110px;
+    left: 80px;
+    z-index: 4;
+}
+
+#main-info {
+    padding-left: 113px;
+    padding-bottom: 30px;
+}
+
+#main-info-title {
+    font-family: "LoraRegular", sans-serif;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+}
+
+#main-info-subtitle {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    font-family: "LoraRegular", sans-serif;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.btn-gold {
+    width: 232px;
+    height: 60px;
+    outline: 0;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    background-color: rgb(163, 136, 92);
+
+    font-family: "MullerBold", sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    transition: all 0.4s ease-out;
+}
+
+.btn-gold:hover {
+    box-shadow: 0 0 18px 6px rgba(140, 108, 58, 0.2);
+    cursor: pointer;
+}
+
+#main-image {
+    transform: translateY(4px);
+    z-index: 2;
+}
+
+
+/*------------ADVANTAGES------------*/
+
+#advantages {
+    width: 100%;
+    padding: 60px 0;
+    background-color: rgb(25, 25, 30);
+}
+
+#advantages-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantage {
+    display: flex;
+    align-items: center;
+}
+
+.advantage span {
+    font-family: "MullerRegular", sans-serif;
+    font-size: 18px;
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+}
+
+
+/*------------DESCRIPTION------------*/
+
+#description {
+    max-width: 1170px;
+    margin: 0 auto;
+    border-right: 1px solid rgb(163, 136, 92);
+}
+
+.block-title {
+    max-width: 595px;
+    margin: 99px auto 54px auto;
+    font-family: "LoraRegular", sans-serif;
+    font-size: 32px;
+    line-height: 1.2;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#description-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#description-image img {
+    transition: all 0.9s linear;
+}
+
+#description-image img:hover {
+    transform: scale(1.1);
+}
+
+#description-text {
+    position: relative;
+}
+
+#description-text-words {
+    max-width: 499px;
+}
+
+.description-text-item {
+    margin-bottom: 35px;
+    margin-right: 30px;
+    font-family: "MullerRegular", sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+    color: rgb(255, 255, 255);
+}
+
+#description-text-logo img {
+    position: absolute;
+    left: 120px;
+}
+
+#description-features {
+    margin-top: 70px;
+}
+
+#description-features .description-features-item {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    font-family: "MullerRegular", sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+#description-features .description-features-item img {
+    margin-right: 18px;
+}
+
+#follow {
+    background-image: url("../img/5c4efbebc.png");
+    background-size: cover;
+    margin-top: 150px;
+    padding: 62px 0;
+}
+
+#follow-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#follow-text {
+    max-width: 425px;
+    font-family: "LoraRegular", sans-serif;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+#follow-text span {
+    font-weight: bold;
+}
+
+#follow-container #follow-action a {
+    text-decoration: none;
+}
+
+#follow-container #follow-action a.btn-gold {
+    padding: 22px 60px;
+}
+
+
+/*------------PRICE------------*/
+
+#list {
+    max-width: 1170px;
+    margin: 100px auto 100px auto;
+    border-left: 1px solid rgb(163, 136, 92);
+    position: relative;
+}
+
+#back-scissors {
+    position: absolute;
+    top: 89px;
+    left: 250px;
+}
+
+#list-container {
+    max-width: 1135px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-container-column {
+    width: 380px;
+}
+
+.list-container-column:first-child {
+    padding-left: 80px;
+}
+
+.list-container-title {
+    font-family: "LoraRegular", sans-serif;
+    font-size: 25px;
+    color: rgb(163, 136, 92);
+}
+
+.additionally {
+    margin-top: 27px;
+}
+
+.list-container-elem {
+    max-width: 370px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 37px;
+    font-family: "MullerRegular", sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.elem-title {
+    width: 235px;
+}
+
+.elem-title span {
+    font-family: "MullerRegular", sans-serif;
+    font-size: 14px;
+    color: rgb(89, 85, 80);
+}
+
+
+/*------------ACCORDION------------*/
+
+#accordion {
+    display: none;
+}
+
+.ui-state-active {
+    background: rgb(163, 136, 92);
+    border: 1px solid rgb(163, 136, 92);
+}
+
+.ui-corner-top {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.ui-accordion .ui-accordion-header {
+    padding: 15px 5px 15px 30px;
+    font-size: 25px;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 0 15px 15px 40px;
+}
+
+.ui-widget-content {
+    border: 1px solid rgb(163, 136, 92);
+    background: transparent;
+}
+
+h3 {
+    font-family: "LoraRegular", sans-serif;
+}
+/*---------------------------------*/
+
+#discount {
+    background-image: url("../img/c4ef.png");
+    background-size: cover;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    padding: 59px 0;
+}
+
+#discount-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#discount-text {
+    max-width: 425px;
+    font-family: "LoraRegular", sans-serif;
+    font-size: 28px;
+    line-height: 1.2;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+#discount-text span {
+    font-weight: bold;
+    color: rgb(163, 136, 92);
+}
+
+/*--------------DISCOUNT-Pop-up--------------*/
+
+#discount-pop-up {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.86);
+    z-index: 999;
+}
+
+#discount-pop-up-frame {
+    max-width: 610px;
+    padding: 30px 35px 70px 35px;
+    position: relative;
+    border: 2px solid rgb(163, 136, 92);
+    border-radius: 10px;
+    filter: drop-shadow(0 0 24px #020708);
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+#discount-pop-up-frame #frame-cancel {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+#frame-content .block-title {
+    line-height: 1.3;
+}
+
+#discount-pop-up-frame #frame-cancel img {
+    transition: all 0.4s ease-out;
+}
+
+#discount-pop-up-frame #frame-cancel img:hover {
+    transform: rotate(45deg);
+}
+
+
+/*--------------Sign_up-Pop-up--------------*/
+
+#sign-up-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.86);
+    z-index: 999;
+}
+
+#sign-up {
+    max-width: 1015px;
+    padding: 60px 90px 60px 90px;
+    position: relative;
+    border: 1px solid #3f3f3f;
+    filter: drop-shadow(0 0 24px #020708);
+    background-image: url("../img/pop-up-sign_up5c94ab45b8835.png");
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+#sign-up:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: -1;
+}
+
+#sign-up-content .block-title {
+    max-width: 385px;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+#sign-up #sign-up-cancel {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+#sign-up #sign-up-cancel:hover {
+    transform: rotate(45deg);
+}
+
+#sign-up #reserve {
+    margin: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sign-up #reserve-button {
+    text-align: center;
+}
+
+.reserve-error {
+    margin-top: 5px;
+    font-family: "MullerRegular", sans-serif;
+    font-size: 15px;
+    text-indent: 5px;
+    color: transparent;
+}
+
+#sign-up #reserve {
+    margin: 20px 0 45px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sign-up .reserve-input {
+    margin-top: 40px;
+}
+
+#sign-up .reserve-input input {
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid rgb(163, 136, 92);
+    width: 225px;
+    height: 43px;
+    background: transparent;
+    font-size: 16px;
+    color: #ffffff;
+    outline: 0;
+}
+
+::placeholder {
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+input::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+
+#sign-up .reserve-input select {
+    padding-top: 0;
+    padding-right: 25px;
+    padding-left: 12px;
+    box-sizing: border-box;
+    border: 1px solid rgb(163, 136, 92);
+    width: 225px;
+    height: 43px;
+    font-size: 16px;
+    background: transparent;
+    color: #ffffff;
+    outline: 0;
+    cursor: pointer;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#sign-up .reserve-input .select {
+    position: relative;
+    display: inline-block;
+}
+
+#sign-up .reserve-input .select:after {
+    content: url("../img/select.png");
+    padding: 0 8px;
+    font-size: 12px;
+    position: absolute;
+    right: -195px;
+    top: -13px;
+    z-index: 1;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+#sign-up .reserve-input select option {
+    color: #000000;
+}
+
+#sign-up #reservation-sent {
+    display: none;
+}
+
+#sign-up #reservation-sent .block-title {
+    margin-top: 9px;
+    max-width: 280px;
+    font-size: 25px;
+    line-height: 1.4;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#sign-up #reservation-sent #reservation-sent-text {
+    max-width: 371px;
+    margin: 35px auto 110px auto;
+    font-family: "MullerRegular", sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+/*------------TEAM------------*/
+
+#team {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 39px;
+    border-right: 1px solid rgb(163, 136, 92);
+}
+
+#team .block-title {
+    margin-top: 0;
+}
+
+#team-text {
+    max-width: 810px;
+    margin: 0 auto 30px auto;
+    font-family: "MullerRegular", sans-serif;
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.card-carousel {
+
+}
+
+.my-card {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    visibility: hidden;
+    left: 1px;
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    height: 200px;
+    bottom: -100px
+}
+
+.my-card:hover .caption {
+    visibility: visible;
+    transition: 1s;
+    -webkit-transition: 1s;
+    transform: translateY(-60px);
+}
+
+.btn-card {
+    position: absolute;
+    left: calc(50% - 55px);
+    bottom: 60px;
+    padding: 8px 15px;
+    outline: 0;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    background-color: rgb(163, 136, 92);
+
+    font-family: "MullerBold", sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    transition: all 0.4s ease-out;
+}
+
+.my-card-name {
+    font-family: "LoraRegular", sans-serif;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: calc(50% - 35px);
+    bottom: 105px;
+}
+
+.btn-card:hover {
+    box-shadow: 0 0 18px 6px rgba(140, 108, 58, 0.2);
+    cursor: pointer;
+}
+
+.card-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    left: 150px;
+}
+
+.card-carousel .my-card {
+    height: 403px;
+    width: 395px;
+    position: relative;
+    z-index: 1;
+    -webkit-transform: scale(0.6) translateY(-2rem);
+    transform: scale(0.6) translateY(-2rem);
+    opacity: 0;
+    cursor: pointer;
+    pointer-events: none;
+    background: #2e5266;
+    background: linear-gradient(to top, #2e5266, #6e8898);
+    transition: 1s;
+}
+
+.card-carousel .my-card:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,0.3);
+    bottom: -5rem;
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.card-carousel .my-card.active {
+    z-index: 3;
+    -webkit-transform: scale(1.2) translateY(0) translateX(0);
+    transform: scale(1.2) translateY(0) translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1s;
+}
+
+.card-carousel .my-card.prev, .card-carousel .my-card.next {
+    z-index: 2;
+    -webkit-transform: scale(0.8) translateY(-1rem) translateX(0);
+    transform: scale(0.8) translateY(-1rem) translateX(0);
+    opacity: 0.6;
+    pointer-events: auto;
+    transition: 1s;
+}
+
+
+/*------------CONTACTS------------*/
+
+#contacts {
+    background-color: rgb(26, 26, 30);
+}
+
+#contacts-container {
+    max-width: 1170px;
+    margin: 80px auto 0 auto;
+    padding: 60px 0 99px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#map {
+    width: 865px;
+    height: 434px;
+}
+
+#map iframe {
+    width: 100%;
+}
+
+#contacts-item {
+    padding-left: 58px;
+}
+
+.contacts-item-text {
+    width: 200px;
+    margin-top: 40px;
+    font-family: "MullerRegular", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.contacts-item-text:last-child {
+    margin-top: 15px;
+}
+
+#contacts #contacts-container #contacts-item .logo {
+    margin-bottom: 65px;
+}
+
+#social-icons {
+    margin-top: 18px;
+    text-align: center;
+}
+
+#social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+#social-icons a img:hover {
+    opacity: 0.9;
+}
+
+
+/*------------FOOTER------------*/
+
+#footer {
+    background-color: rgb(26, 26, 30);
+}
+
+#footer-container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+
+    font-family: "MullerRegular", sans-serif;
+    font-size: 14px;
+    color: rgb(80, 79, 79);
+}
+
+#design a {
+    text-decoration: none;
+    color: rgb(80, 79, 79);
+}
+
+
