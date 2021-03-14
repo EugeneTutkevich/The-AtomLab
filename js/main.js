@@ -1,15 +1,15 @@
 $(document).ready(() => {
 
-    $( "#accordion" ).accordion();
-
     $('.menu-btn').click((e) => {
         $('.menu-btn').toggleClass('menu-btn-active');
         $('.menu-nav').toggleClass('menu-nav-active');
+        $('body').addClass('lock');
     });
 
-    $('.menu-nav, .menu-nav a').click(() => {
+    $('.menu-nav a').click(() => {
         $('.menu-nav').removeClass('menu-nav-active');
         $('.menu-btn').removeClass('menu-btn-active');
+        $('body').removeClass('lock');
     });
 
     // -------------
@@ -56,6 +56,24 @@ $(document).ready(() => {
         }
     });
     //--------------
+
+    $('.center').slick({
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 3,
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 3
+                }
+            }
+        ]
+    });
 
 
     $('#discount-action .btn-gold').click(() => {
