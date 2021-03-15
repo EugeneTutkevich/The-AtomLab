@@ -144,7 +144,7 @@ body {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: transparent;
     position: relative;
     cursor: pointer;
     z-index: 5;
@@ -160,7 +160,7 @@ body {
     margin-top: -1px;
     width: 20px;
     height: 2px;
-    background-color: #222;
+    background-color: #FFFFFF;
 }
 
 .menu-btn span::before,
@@ -461,13 +461,15 @@ body {
 }
 
 .elem-title span {
+    display: block;
+    margin-top: 6px;
     font-family: "MullerRegular", sans-serif;
     font-size: 14px;
     color: rgb(89, 85, 80);
 }
 
 #discount {
-    background-image: url("../img/c4ef.png");
+    background-image: url("../img/c4ef1.png");
     background-size: cover;
     background-position: center;
     margin-top: 150px;
@@ -867,7 +869,7 @@ input::-webkit-input-placeholder {
 }
 
 .slick-dots {
-    bottom: -120px;
+    bottom: -117px;
 }
 
 .slick-dots li {
@@ -1044,6 +1046,8 @@ input::-webkit-input-placeholder {
     color: rgb(255, 255, 255);
     transition: all 0.4s ease-out;
 }
+
+
 /*------------CONTACTS------------*/
 
 #contacts {

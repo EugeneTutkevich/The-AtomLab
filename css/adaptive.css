@@ -8,8 +8,6 @@
     #description-text, #map {
         padding-left: 30px;
     }
-
-
 }
 
 @media screen and (max-width: 1150px) {
@@ -52,7 +50,6 @@
         margin-left: 20px;
         margin-right: 20px;
     }
-
 }
 
 @media screen and (max-width: 1086px) {
@@ -111,7 +108,6 @@
     }
 }
 
-
 @media screen and (max-width: 960px) {
     .advantage span {
         font-size: 16px;
@@ -157,7 +153,6 @@
         font-size: 30px;
     }
 }
-
 
 @media screen and (max-width: 939px) {
     #description-text-words .description-text-item {
